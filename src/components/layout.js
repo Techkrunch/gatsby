@@ -10,13 +10,14 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import "./bootstrap.min.css";
-import "./layout.css"
+import "./layout.css";
+import Navbar from "./Globals/Navbar";
+const Layout = ({ children }) => <> <Navbar/> {children} </>;
 
-const Layout = ({ children }) => <>{children}</>;
-
-
+ 
 Layout.propTypes = {
     children: PropTypes.node.isRequired,
 }
 
 export default Layout
+
