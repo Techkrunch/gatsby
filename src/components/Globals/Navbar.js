@@ -18,13 +18,14 @@ export default class Navbar extends Component {
         path: "/about",
         text: "About",
       },
-    ],
+    ]
   }
 
   navbarHandler = () => {
    this.state.navbarOpen?this.setState({navbarOpen:false,css:"collapse navbar-collapse"}):
    this.setState({navbarOpen:true,css:"collapse navbar-collapse show"})
   };
+
   render() {
     return (
       <nav className="navbar navbar-expand-sm bg-light navbar-light">
@@ -62,8 +63,7 @@ export default class Navbar extends Component {
               </ul>
               
         </div>
-        
-      </nav>
+              </nav>
     )
   }
 }

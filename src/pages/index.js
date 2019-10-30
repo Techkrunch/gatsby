@@ -1,16 +1,32 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import {FaGulp} from "react-icons/fa";
-const IndexPage = () => ( 
-    <Layout>
-    <SEO title = "Home"/>
-    <h1> Hi Watenga </h1> 
-    <p> Vue Js is awesome But your OG is Doing Gatsby. </p> 
-    <FaGulp></FaGulp>
-    </Layout>
+import  BackgroundSection  from "../components/Globals/BackgroundSection"
+import Info from '../components/Home/Info'
+
+const IndexPage = ({ data }) => (
+  <Layout>
+    <SEO title="Home" />
+    <BackgroundSection
+      img={data.img.childImageSharp.fluid}
+      // title="TechKrunch"
+      styleClass="default-background"
+    />
+    <Info/>  </Layout>
 )
+
+export const query = graphql`
+  {
+    img: file(relativePath: { eq: "computer-1572345347195-9607.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+  }
+`
 
 export default IndexPage
