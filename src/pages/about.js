@@ -12,7 +12,7 @@ const AboutPage = ({ data }) => (
     <BackgroundSection
       img={data.img.childImageSharp.fluid}
       title="About TechKrunch"
-      styleClass="default-background"
+      styleClass="about-background"
     />
     <Info/>
     </Layout>
