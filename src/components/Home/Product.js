@@ -8,13 +8,14 @@ export default function Product({ product }) {
         <Img fluid={product.image.fluid} className="card-img-top"></Img>
         <div className="card-body text-center">
           <h6>{product.title}</h6>
-          <h6>KSH{product.price}</h6>
-          <button className="btn btn-yellow mt-3 text-capitalize snipcart-add-item"
-          data-item-id={product.id}
-          data-item-name={product.title}
-          data-item-price={product.price}
-          data-item-image={product.image.fluid.src}
-          data-item-url="https://techkrunch-gatsby.netlify.com/"
+          <h6>${product.price}</h6>
+          <button
+            className="btn btn-yellow mt-3 text-capitalize snipcart-add-item"
+            data-item-id={product.id}
+            data-item-name={product.title}
+            data-item-price={product.price}
+            data-item-image={product.image.fluid.src}
+            data-item-url="https://techkrunch-gatsby.netlify.com/"
           >
             Add to Cart
           </button>
