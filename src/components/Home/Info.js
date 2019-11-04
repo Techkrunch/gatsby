@@ -8,7 +8,7 @@ export default function info() {
       <div className="container">
         <Title title="our story" />
         <div className="row">
-          <div className="col-10 col-sm-8 mx-auto text-center">
+          <div className="col-10 col-sm-8 mb-2 mx-auto text-center">
             <p className="lead text-muted mb-5">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
               quis, dolore consequatur maiores reiciendis cum distinctio? Ullam,
@@ -19,6 +19,7 @@ export default function info() {
               <button className="btn text-uppercase btn-yellow">
                 About Page
               </button>
+  
             </Link>
           </div>
         </div>

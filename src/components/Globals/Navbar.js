@@ -46,7 +46,7 @@ export default class Navbar extends Component {
 
         <div className ={this.state.css}>
      
-          <ul class ="navbar-nav mx-auto">
+          <ul className ="navbar-nav mx-auto">
           {this.state.links.map(link => {
                   return (
                       <li key={link.id} className="nav-item">

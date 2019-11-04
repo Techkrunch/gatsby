@@ -56,3 +56,9 @@ h6 {
     background: var(--mainFooter);
     color: white;
   }
+  .cash{
+    float: right;
+  }
+  .menu,.contact{
+    background: var(--mainGrey);
+  }
